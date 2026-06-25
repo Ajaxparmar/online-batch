@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function save(){
+            let validate=true
+            let myform=document.forms['Myform']['Fname']
+            if(myform.lenght==0)
+        {
+            alert("check name")
+        }
+            console.log(myform);
+        }
+    </script>
+</head>
+<body>
+
+    <form name="Myform" onsubmit="return save()">
+        <div class="form-groups" name="Fname">
+            <input type="text" name="FirstName">
+            <span class="error"></span>
+        </div>
+        <button>save</button>
+    </form>
+    
+</body>
+</html>

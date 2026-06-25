@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="class4.html">
+        <label for="Fname">First Name</label>
+        <input type="text" id="Fname" maxlength="8"
+        minlength="4" name="FirstName" autofocus placeholder="Enter the first name" required>
+
+        <br><br>
+
+        <label for="Lname">Last Name</label>
+        <input type="text" name="LastName" id="Lname" placeholder="Enter the last name">
+
+        <br><br>
+
+        <label for="Email">Email ID</label>
+        <input type="email" name="EmailID" id="Email" placeholder="abx@gxx...." required>
+
+        <br><br>
+
+        <label for="DOB">DOB</label>
+        <input type="date" name="DOB" id="DOB">
+
+        <br><br>
+
+        <label for="Gender">Select Gender</label>
+
+        <input type="radio" checked name="Gender" value="Male" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="Gender" value="Female" id="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="Subject">Select Subject</label>
+        <input type="checkbox" name="Subject1" value="HTML" id="Html" checked>
+
+        <label for="Html">Html</label>
+        <input type="checkbox" name="Subject1" value="CSS" id="CSS">
+
+        <label for="CSS">CSS</label>
+        <input type="checkbox" name="Subject1" value="JS" id="JS">
+        <label for="JS">JS</label>
+
+        <br><br>
+        <label for="city">Select City</label>
+        <select name="mycity" id="city">
+            <optgroup label="Hr">
+                <option value="city-001">Jind</option>
+                <option value="city-002">Hisar</option>
+                <option value="city-003">Hasi</option>
+                <option value="city-004">Rohtak</option>
+                <option>Gurgoan</option>
+            </optgroup>
+            <optgroup label="Pub">
+                <option>Amartiser</option>
+                <option>Bhatinda</option>
+            </optgroup>
+
+        </select>
+
+
+        <input list="mylist">
+
+        <datalist id="mylist">
+            <option>jind</option>
+            <option >Hisar</option>
+            <option>jind</option>
+            <option >Hisar</option>
+            <option>jind</option>
+            <option >Hisar</option>
+            <option>jind</option>
+            <option >Hisar</option>
+
+        </datalist>
+
+
+
+
+        <label for="uploadphot">Unload image</label>
+        <input type="file" name="mfile" id="uploadphot" accept=".png,.jpg" multiple> <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+
+        <input type="text" readonly value="1002" name="srno">
+
+        <label for="selectRange">Select Range</label>
+        
+        <input type="range" name="range" min="10" value="20" max="100" id="selectRange">
+        <br><br>
+
+        <label for="Address">Address:- </label>
+        <textarea name="" rows="4" cols="30" id="">Address:-</textarea>
+
+        <input type="color">
+
+        <input type="search">
+
+        <label for="no">Enter no</label>
+        <input type="number" max="100" min="10" id="no" name="no">
+
+        <input type="submit" value="save from" name="" id="">
+
+        <input type="image" formnovalidate="formnovalidate" width="60" height="400" src="/assets/image/img1.jpg">
+        <br><br>
+        <input type="url">
+        <input type="reset">
+        <input type="tel">
+
+
+     
+    </form>
+
+
+</body>
+
+</html>
