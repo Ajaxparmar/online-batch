@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .container{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr)
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 80px;
+            background-color: rgb(5, 27, 66) !important;
+            border-radius: 5px;
+      
+
+        }
+        .sidebar{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: rgb(102, 102, 9) !important;
+        }
+        .content{
+            height: 200px;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            background-color: rgb(213, 21, 146);
+        }
+        .content-1{
+            height: 200px;
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+        }
+        .d-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar{
+            padding: 0px 20px;
+        }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar ul li{
+            list-style: none;
+            padding: 0px 12px;
+        }
+
+        .card{
+            background-color: aqua;
+            padding: 8px 16px;
+            margin: 10px;
+            color: white;
+            font-size: 24px;
+        }
+        .navbar .contact button{
+            padding: 8px 12px;
+    background-color: #99be12;
+    color: white;
+    font-size: 19px;
+    border: none;
+    border-radius: 20px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card header">
+            <div class="navbar d-flex">
+                <div class="band-logo">
+                    <h4>LOGOBAKARY</h4>
+                </div>
+                <nav>
+                    <ul class="d-flex">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <div class="contact">
+                    <button>Contact</button>
+                </div>
+            </div>
+        </div>
+        <div class="card sidebar">
+          Sidebar
+        </div>
+        <div class="card content">
+            content
+        </div>
+        <div class="card content-1">
+            content 1
+        </div>
+        <div class="card content-1">
+            content 2
+        </div><div class="card footer">
+           Footer
+        </div>
+    </div>
+    
+</body>
+</html>
