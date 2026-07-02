@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        .container{
+            width: 80%;
+            margin: 0px auto;
+            line-height: 60px;
+        }
+        .d-flex{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .text-red{
+            font-weight: 400;
+            color: red;
+        }
+        .brand-logo h2{
+            font-size: 32px;
+        }
+        .nav-items  nav ul li{
+            padding: 8px 12px;
+            list-style: none;
+        }
+        .nav-items nav ul li a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+
+        }
+        .nav-items form input{
+            font-size: 16px;
+            padding: 6px 12px;
+            border:1px solid gainsboro;
+            border-radius: 50px 0px 0px 50px;
+        }
+        .nav-items form  button{
+            background-color: red;
+            border: 0;
+            padding: 6px 12px;
+            font-size: 16px;
+            color: white;
+            border-radius: 0px 50px 50px 0px;
+        }
+        .nav-items form{
+            display: flex;
+        }
+        .nav-items .fa-moon{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div class="container d-flex">
+            <div class="brand-logo">
+                <h2><span class="text-red"><i class="fab fa-wikipedia-w"></i></span>orkup</h2>
+            </div>
+            <div class="nav-items d-flex">
+                <nav>
+                    <ul class="d-flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">pages</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <form>
+                    <input type="search" placeholder="Enter keyword...">
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+                <i class="fa-regular fa-moon"></i>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
