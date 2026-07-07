@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             background: #e6f0e6ff;
             justify-content: center;
             padding: 10px;
-            display: flex;
         }
-        .container{
+
+        .container {
             max-width: 1000px;
             width: 100%;
             margin: 20px;
             background-color: white;
             border-radius: 10px;
             padding: 0 40px 40px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1); 
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
-        .logo{
+
+        .logo {
             font-size: 25px;
             font-weight: 600px;
             color: #1e4db7;
         }
-        .logo span{ color: #333; }
-        nav ul{
+
+        .logo span {
+            color: #333;
+        }
+
+        nav ul {
             display: flex;
             list-style: none;
             gap: 20px;
+         
+        }
+
+        nav ul li{
+            position: relative;
         }
         nav ul li a {
             text-decoration: none;
             color: #333;
-             font-weight: 400px;
-             font-size: 15px;
+            font-weight: 400px;
+            font-size: 15px;
         }
-        nav ul li a.active{ color: #ff5a3c; }
-        
-        .nav-right{
+
+        nav ul li a.active {
+            color: #ff5a3c;
+        }
+
+        .nav-right {
             display: flex;
             gap: 15px;
             align-items: center;
         }
-        .search-icon{
+
+        .search-icon {
             background: #f5f7ff;
             width: 35px;
             height: 35px;
@@ -61,8 +76,8 @@
             justify-content: center;
             color: #ff5a3c;
         }
-        
-        .btn-purchase{
+
+        .btn-purchase {
             background: #1e4db7;
             color: white;
             padding: 10px 20px;
@@ -71,37 +86,42 @@
             cursor: pointer;
             margin: 10px;
         }
-       
+
         /* hero section */
-        .hero{
+        .hero {
             display: flex;
             align-items: center;
             gap: 30px;
             padding: 50px 0px;
         }
-        .hero-text h4{
+
+        .hero-text h4 {
             color: rgb(58, 53, 53);
             font-weight: 300px;
             font-size: 15px;
         }
-        .hero-text h1{
+
+        .hero-text h1 {
             font-size: 45px;
             margin: 5px 0px;
             line-height: 1.2;
             color: #111;
         }
-        hero-text p{
+
+        hero-text p {
             color: rgb(41, 39, 39);
             margin: 5px 0px;
             max-width: 400px;
             margin-bottom: 25px;
             font-size: 13px;
         }
-        .hero-btns{
+
+        .hero-btns {
             display: flex;
             gap: 10px;
         }
-        .btn-primary{
+
+        .btn-primary {
             background: bisque;
             padding: 11px 24px;
             color: white;
@@ -109,72 +129,123 @@
             border: none;
             cursor: pointer;
         }
-        .btn-outline{
+
+        .btn-outline {
             background: burlywood;
             color: blanchedalmond;
-            padding: 2px ;
+            padding: 2px;
             border-radius: 5px;
-             cursor: pointer;
+            cursor: pointer;
         }
+
         .hero-img {
             position: relative;
             width: 450;
         }
+
         .hero-img img {
             border-radius: 15px;
             width: 100%;
         }
-        .features section{
+
+        .features section {
             background-color: #f8faff;
             padding: 40px 30px;
         }
-        .feature top{
-           display: flex;
-           justify-content: space-between;
-           gap: 50px;
-           margin-bottom: 30px;
+
+        .feature top {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            margin-bottom: 30px;
         }
-        .feature-top h4{
+
+        .feature-top h4 {
             font-size: 15px;
             color: #888;
             font-weight: 500px;
         }
-        .feature-top h2{
+
+        .feature-top h2 {
             font-size: 30px;
             margin-top: 5px;
         }
-        .features-top p{
+
+        .features-top p {
             color: #666;
             font-size: 15px;
             line-height: 1.5;
-        max-width: 400px;
+            max-width: 400px;
         }
+
         .features {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
-        .feature h3{
+
+        .feature h3 {
             font-size: 15px;
             margin-bottom: 10px;
         }
-        .feature p{
+
+        .feature p {
             color: #666;
             font-size: 12px;
             line-height: 1.5;
         }
-        
+
+        .d-flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .bg-dark {
+            background-color: #888;
+        }
+
+        .dropdown {
+            display: flex;
+            flex-direction: column;
+            padding: 8px 16px;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 99;
+            top:20px;
+            left: 0px;
+            width: 150px;
+            display: none;
+            cursor: pointer;
+        }
+        ul li:hover .dropdown{
+            display: inline-block;
+        }
     </style>
 </head>
+
 <body>
+<<<<<<< HEAD
         <div class="container d-flex">
             <div class="logo">Digit<span>Marketing</span></div>
+=======
+    <div class="container ">
+        <div class="navbar d-flex">
+            <div class="logo">Digit<span>Marketing</span> </div>
+>>>>>>> e1903dc2fe13e6df7b7c9bcf060a9da5f6e4e371
             <div class="nav-items">
-                <nav>
+                <nav class="d-flex">
                     <ul>
                         <li><a href="#" style="color: #ff5a3c;">Home</a></li>
                         <li> <a href="#">About</a></li>
-                        <li> <a href="#">Blogs</a></li>
+                        <li> <a href="#">Blogs</a>
+                            <ul class="bg-dark dropdown">
+                                <li><a href="/class2.html">Blog 1</a></li>
+                                <li>Home Blog</li>
+                                <li>Home Blog</li>
+                                <li>Home Blog</li>
+                            </ul>
+                        </li>
                         <li> <a href="#">Pages</a></li>
                         <li> <a href="#">Contact</a></li>
                     </ul>
@@ -184,6 +255,7 @@
                         <i class="fa-regular fa-moon"></i>
                     </div>
                 </nav>
+<<<<<<< HEAD
                  <section class="hero">
     <div class="hero-text">
       <h4>We Are Gathered</h4>
@@ -231,11 +303,67 @@
 
                     </div>
                 </section>
+=======
+>>>>>>> e1903dc2fe13e6df7b7c9bcf060a9da5f6e4e371
             </div>
-
-
         </div>
-    
-    
+        <section class="hero">
+            <div class="hero-text">
+                <h4>We Are Gathered</h4>
+                <h1>For Your <br>Digital Marketi|</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, excepturi. Distinctio
+                    accusantium fugit odit fugit ipsum.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary">Read More</button>
+                    <button class="btn-outline">Get Started</button>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800" alt="Team Meeting">
+                <div class="arrow"><i class="fa fa-chevron-right"></i></div>
+            </div>
+        </section>
+
+
+        <section class="features-section">
+            <div class="feature-top">
+            </div>
+            <div>
+                <h4>Design & Marketing</h4>
+                <h2>Let's Grow Your Business Together</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in aut numquam? Similique possimus
+                pariatur cuasperiores, distinctio magni.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <i class="fa fa-users"></i>
+                    <h3>Great Support</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga delectus, et distinctio quae est
+                        quibusdam quam accusanti</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-pen-to-square"></i>
+                    <h3>Perfect Design</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga delectus, et distinctio quae est
+                        quibusdam quam accusanti</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-signal"></i>
+                    <h3>SEO Optimized</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga delectus, et distinctio quae est
+                        quibusdam quam accusanti</p>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+
+
+
+
 </body>
+
 </html>
