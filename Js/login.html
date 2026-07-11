@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        // this is from database
+        const username = "vijay@gmail.com"
+        const password = "12345"
+
+        let user=prompt("Enter the username...")
+        let pass= prompt("Enter the password...")
+
+        if (username == user) 
+        {
+                if(pass==password)
+                {
+                    console.log("Welcome user");
+                }
+                else
+                {
+                    console.log("Plz check the password..");
+                }
+
+        }
+        else {
+            console.log("plz check the username");
+
+        }
+
+
+
+    </script> -->
+
+    <!-- <script>
+        let age=10;
+
+        // age>=17?true:false
+
+        let checkage= age>=18?"Right to vote":"Not right to vote"
+
+        console.log(checkage);
+
+
+        let a=90, b=140,c=970
+
+        let bigNo= a>b?(a>c?"A is greater then B,C":"C is greater then A,B"):(b>c?"B is Greater then A,C":" C is greater then A, B")
+
+        console.log(bigNo);
+        
+        
+
+    </script> -->
+
+
+    <script>
+
+        // switch case
+
+        // let userkey= Number(prompt("Press 1 for New game, Press 2 For Resume game, press 3 for select player, Press 4 for Exit "))
+
+
+        // switch(userkey)
+        //     {
+        //         case 1:
+        //             console.log("New game start");
+        //         break;
+        //         case 2: 
+        //             console.log("Resume game");
+        //         break;
+        //         case 3:
+        //             console.log("Plz select the players");
+        //         break;
+        //         case 4:
+        //             console.log("Exit");
+        //         break;
+
+        //         default:
+        //             console.log("invalid input");
+
+        //     }
+
+
+        // 0 to 39 -> D
+        // 40 to 59 -> C 
+        // 60 to 79-> B 
+        // 80 to 100 -> A
+        // 10 to 19/10-> 1
+        // 20 to 29/10 = 2
+        //30 to 39/10= 3
+
+        let no =58
+        let per = parseInt(no / 10);
+        let grade;
+        if (no > 0 && no <= 100) {
+            switch (per) {
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                    grade = "Grade is D"
+                    break;
+                case 4:
+                case 5:
+                    grade = "Grade is C"
+                    break;
+                case 6:
+                case 7:
+                    grade = "Grade is B"
+                    break;
+                case 8:
+                case 9:
+                case 10:
+                    grade = "Grade is A"
+                    break;
+                default:
+                    grade = "invalid grade"
+            }
+        }
+        else {
+            grade = "Not a valid no"
+        }
+        console.log(grade);
+
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
