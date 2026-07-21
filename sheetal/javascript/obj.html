@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // const car = {
+        //     type: "Fiat",
+        //     model: "500",
+        //     color: "white"
+        // };
+        // console.log(car);
+
+        // const students = {
+        //     name: "sheetal",
+        //     class: "BSCAI",
+        //     rollno: "11",
+        // };
+        // students.marks = "70"
+        // console.log(students);
+        // console.log(students.name);
+        // console.log(students.rollno);
+
+        // updating the data
+
+        // let employee = {
+        //     name:"sheetal",
+        //     salary:"30000",
+        // };
+        // employee.salary = 40000;
+        // delete employee.name;
+        // console.log(employee);
+
+
+        let student = {
+            name: "sheetal",
+            marks: 90,
+
+            display: function () {
+                console.log("Name:", this.name);
+                console.log("Marks:", this.marks);
+            }
+        };
+
+        student.display();
+
+
+        let book = {
+            title: "java",
+            author: "poonam",
+            price: 500
+        };
+
+        for (let key in book) {
+            console.log(key + " : " + book[key]);
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
