@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Document</title>
+    <script>
+        const doctors = [
+            {
+                id: 1,
+                name: "Dr. Rajesh Sharma",
+                specialization: "Cardiologist",
+                experience: 12,
+                hospital: "City Heart Hospital",
+                city: "Delhi",
+                fees: 800,
+                rating: 4.8,
+                image: "https://randomuser.me/api/portraits/men/11.jpg"
+            },
+            {
+                id: 2,
+                name: "Dr. Priya Verma",
+                specialization: "Dermatologist",
+                experience: 9,
+                hospital: "Skin Care Clinic",
+                city: "Mumbai",
+                fees: 600,
+                rating: 4.7,
+                image: "https://randomuser.me/api/portraits/women/21.jpg"
+            },
+            {
+                id: 3,
+                name: "Dr. Amit Kumar",
+                specialization: "Orthopedic",
+                experience: 15,
+                hospital: "Sunrise Hospital",
+                city: "Bengaluru",
+                fees: 900,
+                rating: 4.9,
+                image: "https://randomuser.me/api/portraits/men/31.jpg"
+            },
+            {
+                id: 4,
+                name: "Dr. Neha Gupta",
+                specialization: "Pediatrician",
+                experience: 8,
+                hospital: "Happy Kids Hospital",
+                city: "Pune",
+                fees: 500,
+                rating: 4.6,
+                image: "https://randomuser.me/api/portraits/women/41.jpg"
+            },
+            {
+                id: 5,
+                name: "Dr. Vikram Singh",
+                specialization: "Neurologist",
+                experience: 18,
+                hospital: "Neuro Care Center",
+                city: "Hyderabad",
+                fees: 1200,
+                rating: 4.9,
+                image: "https://randomuser.me/api/portraits/men/51.jpg"
+            }
+        ];
+    </script>
+</head>
+
+<body>
+
+
+    <div class="container mt-5">
+        <div class="card p-4">
+            <h2>Doctor details</h2>
+            <div class="card mb-3 p-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="..." id="doctorImg">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title" id="doctorName">Card title</h5>
+                            <p class="card-text">hospital <span id="hospital"></span></p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <button class="btn btn-danger" onclick="prev()">Prev</button>
+                            <button class="btn btn-success" onclick="next()">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const img = document.getElementById("doctorImg")
+        const doctorName = document.getElementById("doctorName")
+        const hospital = document.getElementById("hospital")
+        img.src = doctors[0].image
+        doctorName.innerHTML = doctors[0].name
+        hospital.innerHTML = doctors[0].hospital
+        let count = 0
+
+        console.log(doctors.length);
+        
+    function next() {
+       
+            count++;
+            if(count<doctors.length){
+            img.src = doctors[count].image
+            doctorName.innerHTML = doctors[count].name
+            hospital.innerHTML = doctors[count].hospital
+            }
+            else{
+                alert("No doctors")
+                    count=4
+            }
+        }
+    function prev() {
+            count--;
+            if(count>0){
+            img.src = doctors[count].image
+            doctorName.innerHTML = doctors[count].name
+            hospital.innerHTML = doctors[count].hospital
+            }
+            else{
+                alert("No doctors")
+                    count=0
+            }
+        }
+
+
+
+
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
