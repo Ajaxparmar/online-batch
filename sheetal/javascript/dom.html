@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="online-batch/sheetal/javascript/nature1.jpg" id="image1">
+    <h1 class="heading" id="heading1">welcome to code scaler</h1>
+    <h1 class="heading"> code scaler</h1>
+    <h1 class="heading">best coding center</h1>
+    <h1 class="heading"> placed in jind</h1>
+
+    <button onclick="change()">change</button>
+    <button onclick="changeImage()">change image</button>
+
+
+</body>
+<script>
+    function changeImage() {
+        const img = document.getElementById("image1")
+        img.src = "online-batch/sheetal/javascript/imag2.jpg"
+        console.log(img);
+    }
+    // // function change() {
+    //     const element = document.getElementsByTagName("h1")
+    //     element[0].style.backgroundColor = "orange"
+    //      element[3].style.backgroundColor = "orange"
+    //     element[0].style.color = "white"
+    //     element[0].style.padding = "20px"
+    //     element[0].innerHTML = "WELCOME TO MY CODE "
+    // }
+    const element = document.getElementById("heading1")
+    // const element = document.querySelector("#heading1")
+    // const element = document.querySelector(".heading")
+    // const element = document.getElementsByClassName("heading")
+    console.log(element);
+    function change() {
+
+        element.style.backgroundColor = "orange"
+        element.style.backgroundColor = "orange"
+        element.style.color = "white"
+        element.style.padding = "20px"
+        element.innerHTML = "WELCOME TO MY CODE "
+    }
+
+</script>
+
+</html>

@@ -81,37 +81,57 @@
 
         //     console.log(pattern);
         // }
-        let n = 5;
+        // let n = 5;
 
-        // Upper part
-        for (let i = 1; i <= n; i++) {
-            let pattern = "";
+        // // Upper part
+        // for (let i = 1; i <= n; i++) {
+        //     let pattern = "";
 
-            for (let j = 1; j <= n - i; j++) {
-                pattern += " ";
+        //     for (let j = 1; j <= n - i; j++) {
+        //         pattern += " ";
+        //     }
+
+        //     for (let k = 1; k <= 2 * i - 1; k++) {
+        //         pattern += "*";
+        //     }
+
+        //     console.log(pattern);
+        // }
+
+        // // Lower part
+        // for (let i = n - 1; i >= 1; i--) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= n - i; j++) {
+        //         pattern += " ";
+        //     }
+
+        //     for (let k = 1; k <= 2 * i - 1; k++) {
+        //         pattern += "*";
+        //     }
+
+        //     console.log(pattern);
+        // }
+
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = 1; j <= 5; j++) {
+        //         document.write(i)
+
+        //     }
+        //     document.write("<br>")
+
+        // }
+
+         for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write(i)
+
             }
+            document.write("<br>")
 
-            for (let k = 1; k <= 2 * i - 1; k++) {
-                pattern += "*";
-            }
-
-            console.log(pattern);
         }
 
-        // Lower part
-        for (let i = n - 1; i >= 1; i--) {
-            let pattern = "";
 
-            for (let j = 1; j <= n - i; j++) {
-                pattern += " ";
-            }
-
-            for (let k = 1; k <= 2 * i - 1; k++) {
-                pattern += "*";
-            }
-
-            console.log(pattern);
-        }
     </script>
 
 </head>

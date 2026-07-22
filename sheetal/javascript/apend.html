@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-green{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content" id="content">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const tasks = [
+            "Wake up early",
+            "Exercise",
+            "Take a shower",
+            "Eat breakfast",
+            "Check emails",
+            "Attend meeting",
+            "Complete JavaScript practice",
+            "Read a book",
+            "Go for a walk",
+            "Sleep on time"
+        ];
+
+        console.log(tasks);
+        const element = document.getElementById("content")
+
+        for (let i of tasks) {
+            const h1 = document.createElement("h1")
+            h1.innerHTML = i
+            element.append(h1)
+
+        }
+
+        // console.log(element);
+    </script>
+
+</body>
+
+</html>
