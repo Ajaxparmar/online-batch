@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <form action="" position="center">
+        <table cellpadding="6" border="" bgcolor="skyblue">
+            <thead>
+                <caption><h1>Student Registration Form</h1></caption>
+            </thead>
+            <tr>
+                <td><label for="Fname">First Name</label></td>
+                <td><input type="text" name="firstname" id="Fname" required placeholder="Enter your First nmae"
+                        autofocus maxlength="50" > (Maximum 50 characters allowed)</td>
+
+            </tr>
+            <tr>
+                <td><label for="Lname">Last name</label></td>
+                <td><input type="text" name="lastname" id="Lname" placeholder="Enter your last nmae" maxlength="50"> (Maximum 50 character allowed)</td>
+            </tr>
+            <tr>
+                <td><label for="email">Email ID</label></td>
+                <td><input type="email" name="emailid" id="email" placeholder="xyz@123..." required></td>
+            </tr>
+            <tr>
+                <td><label for="mobileno.">Mobile Number</label></td>
+                <td><input type="number" name="mobileno." id="mobileno." placeholder="12345..." maxlength="10"> (10 digits allowed)</td>
+            </tr>
+            <tr>
+                <td><label for="grnder">Gender</label></td>
+                <td><input type="radio" name="grnder" id="male" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="fender" id="female" value="femalr">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">DOB</label></td>
+                <td><input type="date" name="dob" id="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Adderss</label></td>
+                <td><textarea name="address" id="address" rows="4" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td><select name="mycity" id="city">
+                        <optgroup label="Haryana">
+                            <option value="">Hisar</option>
+                            <option value="">Hisar</option>
+                            <option value="">Hisar</option>
+                            <option value="">Hisar</option>
+                        </optgroup>
+
+                        <optgroup label="punjab">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </optgroup>
+
+                    </select></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pincode">Pincode</label>
+                </td>
+                <td>
+                    <input type="number" name="pincode" id="pincode" maxlength="6"> (6 digits allowed)
+                </td>
+            </tr>
+            <tr>
+                <td><label for="state">State</label></td>
+                <td><input type="text" name="state" id="state" maxlength="40"> (Max 40 character allowed)</td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td><select name="country" id="country">
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="asia">ASIA</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">Hobbies</label></td>
+                <td>
+                <input type="checkbox" name="hobbie1" id="drawing">
+                <label for="drawing">Drawing</label>
+                <input type="checkbox" name="hobbie2" id="singing">
+                <label for="singing">Singing</label>
+                <input type="checkbox" name="hobbie3" id="dancing" required>
+                <label for="dancing">Dancing</label>
+                <input type="checkbox" name="hobbie4" id="coding" checked>
+                <label for="coding">Coding</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="qualifaciation">Qualifaciation</label></td>
+                <td><input type="checkbox" name="q1" id="10th">
+                <label for="10th">10th</label>
+                <input type="checkbox" name="q2" id="12th">
+                <label for="12th">12th</label>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2" center>
+ 
+                <button>submit</button>
+                <input type="reset" name="" id="">
+            
+                </td>
+           
+            </tr>
+           
+        </table>
+    </form>
+</body>
+
+</html>
