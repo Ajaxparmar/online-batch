@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container {
+   
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    gap: 10px;
+
+}
+.card{
+    margin: 10px;
+    padding: 8px 16px ;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+   
+}
+.header{
+    background-color:rgb(161, 161, 254);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* height: 80px; */
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+.navbar{
+    padding: 10px;
+    margin: 5px;
+}
+.navbar nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar nav ul li{
+    list-style: none;
+    padding: 0px 12px;
+}
+.navbar .contact button{
+    padding: 8px 12px;
+    background-color: #99be12;
+    color: white;
+    font-size: 19px;
+    border: none;
+    border-radius: 20px;
+}
+.sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: pink;
+    /* width: 300px; */
+}
+.main-content{
+    background-color: lightcoral;
+    grid-column-start: 2;
+    grid-column-end: 4;
+     height: 100px;
+    /* width: 1200px;  */
+}
+.content1{
+    background-color: lightcoral;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 200px;
+}
+.content2{
+    background-color: lightcoral;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 200px;
+}
+.footer{
+    background-color: bisque;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    height: 100px;
+
+}
+ .d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+    ;
+ }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="card header">
+            <div class="navbar d-flex ">
+                <div class="brand-logo">
+                    <h4>LOGOBAKERY</h4>
+                </div>
+                <nav>
+                    <ul class="d-flex">
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <div class="Contact">
+                    <button>Contact</button>
+                </div>
+            </div>
+        </div>
+        <div class="card sidebar">
+            sidebar
+        </div>
+        <div class="card main-content">
+            main-content
+        </div>
+        <div class="card content1">
+            content1
+        </div>
+        <div class="card content2">
+            content2
+        </div>
+        <div class="card footer">
+            footer
+        </div>
+        
+    </div>
+</body>
+
+</html>
