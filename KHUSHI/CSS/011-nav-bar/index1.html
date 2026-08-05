@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .container {
+        /* background-color: black; */
+    }
+
+    .header {
+        background-color: black;
+        border-radius: 5px;
+        padding: 0px 20px;
+    }
+
+    .card {
+        color: white;
+        border: 1px;
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .navbar nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar nav ul li a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+    .navbar nav ul li {
+        list-style: none;
+        border-right: 1px solid white;
+        padding-right: 15px;
+    }
+
+    .navbar nav ul li:last-child {
+        border-right: none;
+    }
+
+    .logo {
+        gap: 1px;
+    }
+
+    .logo span {
+        background-color: white;
+        color: black;
+        padding: 5px 8px;
+        font-weight: bold;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #search{
+
+    padding:6px;
+
+    border:none;
+
+    outline:none;
+} 
+.hhh ul li{
+    list-style: none;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class=" card header">
+            <div class="left d-flex">
+                <div class=" logo d-flex ">
+                    <span>B</span>
+                    <span>B</span>
+                    <span>C</span>
+                </div>
+                <div class="card signin">
+                    <h3><i class="fa-regular fa-user"></i> Sing in</h3>
+                </div>
+                
+                <nav class="hhh">
+                    <ul class="d-flex center">
+                        <li class="card"><a href="#">News</a></li>
+                        <li class="card"><a href="#">Sport</a></li>
+                        <li class="card"><a href="#">Reel</a></li>
+                        <li class="card"><a href="#">Worklife</a></li>
+                        <li class="card"><a href="#">Travel</a></li>
+                        <li class="card"><a href="#">Future</a></li>
+                        <li class="card"><a href="#">More</a></li>
+                    </ul>
+                </nav>
+                <div class="right">
+                    <input type="search" name="" id="search" placeholder="Search">
+                    <label for="search"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
